@@ -1,0 +1,31 @@
+@import "../utils/mixup";
+@import "../utils/variables";
+
+.discovery {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    align-items: center;
+    padding-bottom: 60px;
+& h2 {
+    font-size: 35px;
+    text-align: center;
+}
+& button {
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 18px;
+    border: none;
+    border-radius: 30px;
+    background-image: linear-gradient(351deg, #9356dc, #ff79da);
+    text-align: center;
+    transition: transform 100ms;
+    cursor: pointer;
+    @include ombrage
+}
+& button:hover {
+    transform: scale(1.01);
+    opacity: 0.9;
+    @include ombrage
+}
+}

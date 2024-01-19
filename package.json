@@ -1,0 +1,17 @@
+{
+  "name": "ohmyfood",
+  "version": "0.1.0",
+  "description": "Project OCR",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "node-sass -wr css/style.scss css/style.css"
+  },
+  "author": "Abdra",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
