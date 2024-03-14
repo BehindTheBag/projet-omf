@@ -1,0 +1,121 @@
+@import "../utils/variables";
+
+
+section.restaurants {
+    background-color: #f6f6f6;
+    padding: 0 100px;
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+
+    }
+}
+
+
+
+.restaurants {
+    margin-bottom: 2rem;
+    max-width: 100%;
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .resto {
+        margin-bottom: 2rem;
+    }
+
+    .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); 
+    gap: 2rem;
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .card__new {
+        background-color: #f6f6f6;
+        border-radius: 0rem 0rem 1rem 1rem;
+        padding-bottom: 4%;
+        position: relative;
+        margin: 1rem;
+        .fas {
+            color: transparent;
+            background-image: linear-gradient($color-purple, $color-pink);
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: 0.5s ease-out;
+            }
+            .fas:hover  {
+                opacity: 1;
+            
+            }
+    }
+
+    .card__new::before {
+        content: "Nouveau";
+        position: absolute;
+        text-align: center;
+        background-color: $color-green;
+        color: #299077; 
+        height: 1.7rem;
+        width: 4.4rem;
+        top: 1rem;
+        right: 1rem;
+        padding: .3rem;
+        font-size: 1rem;
+        border-radius: .125rem;
+        
+    }
+
+    .card {
+
+        background-color: #f6f6f6;
+        border-radius: 0rem 0rem 1rem 1rem;
+        padding-bottom: 4%;
+        margin: 1rem;
+
+        
+        &__img {
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-image: url(../../assets/1la_palette_du_gout.jpg), url(../../assets/2la_note_enchantee.jpg), url(../../assets/3a_la_française.jpg), url(../../assets/4le_delice_des_sens.jpg); 
+        background-size: cover;
+        background-position: left;
+        height: 14rem;
+        }
+
+        &__content {
+            position: relative;
+
+            h3, p {
+                margin: 0.5rem;
+            }
+            i {
+                font-size: 1.4rem;
+                position: absolute;
+                bottom: 50%;
+                transform: translateY(+50%);
+                right: 1rem;
+                cursor: pointer;
+            }
+        }
+        
+        .fas {
+        color: transparent;
+        background-image: linear-gradient($color-purple, $color-pink);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: 0.5s ease-out;
+        }
+        .fas:hover  {
+            opacity: 1;
+        }
+        }
+    }
+
+
+}

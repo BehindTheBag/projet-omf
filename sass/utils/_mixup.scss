@@ -1,7 +1,121 @@
 @mixin ombrage {
-    box-shadow: 1px 8px 10px 1px #7e7e7e;
+    box-shadow: 1px 4px 5px 1px #c9c8c8;
 }
 
 @mixin buff {
     transform: scale(1.01);
 }
+
+@mixin btn  {
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 18px;
+    border: none;
+    border-radius: 30px;
+    background-image: linear-gradient(351deg, #9356dc, #ff79da);
+    text-align: center;
+    transition: transform 100ms;
+    cursor: pointer;
+    @include ombrage
+
+} 
+
+
+@mixin heartAnim {
+    .far {
+
+        font-size: 1.4rem;
+        position: absolute;
+        top: 21%;
+        right: 1rem;
+    }
+    
+
+    .fas {
+        
+        font-size: 1.4rem;
+        position: absolute;
+        top: 21%;
+        right: 1rem;
+        color: transparent;
+        background-image: linear-gradient($color-purple, $color-pink);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: 0.5s ease-out;
+        cursor: pointer;
+        
+        &:hover  {
+        opacity: 1;
+    }
+    }
+    
+    } 
+
+
+    @mixin heartAnim2 {
+        .far {
+    
+            font-size: 1.4rem;
+            position: absolute;
+            bottom: 65%;
+            transform: translateY(-50%);
+            right: 1rem;
+        }
+        
+    
+        .fas {
+            
+            font-size: 1.4rem;
+            position: absolute;
+            bottom: 65%;
+            transform: translateY(-50%);
+            right: 1rem;
+            color: transparent;
+            background-image: linear-gradient($color-purple, $color-pink);
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: 0.5s ease-out;
+            cursor: pointer;
+            
+            &:hover  {
+                opacity: 1;
+        }
+        }
+        
+        } 
+
+
+        @mixin heartAnimenu {
+            .menu__title .far {
+        
+                font-size: 1.4rem;
+                position: absolute;
+                top: 2%;
+                transform: translateY(+1%);
+                right: 1rem;
+            }
+            
+        
+            .menu__title .fas   {
+                
+                font-size: 1.4rem;
+                position: absolute;
+                top: 2%;
+                transform: translateY(+1%);
+                right: 1rem;
+                color: transparent;
+                background-image: linear-gradient($color-purple, $color-pink);
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+                transition: 0.5s ease-out;
+                cursor: pointer;
+                
+                &:hover  {
+                    opacity: 1;
+            }
+            }
+            
+            } 
