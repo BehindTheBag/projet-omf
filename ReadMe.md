@@ -1,3 +1,6 @@
 Projet 4
 
-html & sass
+html & css using sass
+Keyframes, mixin
+
+https://projet-omf.vercel.app/
